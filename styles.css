@@ -108,3 +108,17 @@ h1 {
 .stop {
   background: #dc3545;
 }
+
+/* Design Link */
+.design-link-container {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+.design-link-container a {
+  color: #007bff;
+  text-decoration: none;
+}
