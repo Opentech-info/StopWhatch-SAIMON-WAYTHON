@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>STOP WATCH</h1>
+
+      <!-- Time Box -->
+      <div class="time-wrapper">
+        <div class="time-box">
+          <div class="main-time" id="mainTime">00:00</div>
+          <div class="ms-time" id="msTime">.00</div>
+        </div>
+
+        <div class="reset-area" onclick="resetTimer()">
+          <div class="reset-circle">↻</div>
+          <span>Reset</span>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <button class="star-btn start" onclick="startTimer()">START</button>
+      <button class="star-btn stop" onclick="stopTimer()">STOP</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
