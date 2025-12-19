@@ -69,13 +69,19 @@ h1 {
 
 /* Star Buttons */
 .star-btn {
-  width: 160px;
-  height: 50px;
+  width: 120px; /* Made width and height equal for a better star shape */
+  height: 120px;
   margin: 10px auto;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.1em;
+  font-weight: bold;
   color: #fff;
+  /* Added display flex to center the text inside the star */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -88,6 +94,11 @@ h1 {
     2% 35%,
     39% 35%
   );
+}
+
+.star-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 .start {
